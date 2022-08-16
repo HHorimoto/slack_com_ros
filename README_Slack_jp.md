@@ -53,3 +53,8 @@
 以下の手順で，作成したワークスペース内のチャンネルの`ID`を取得してください。
 
 - 手順：前項で追加したチャンネル名を右クリックして`チャンネル詳細を表示する`を選択 → 最下部の`チャンネルID`を取得
+
+## References
+
+[1] npaka, "slack API 入門 (1) - Pythonによるメッセージ送信", note, https://note.com/npaka/n/n4bcb38a1ea74 (参照 2022-08-15)
+[2] 鈴木純, "Slackチャンネルにメッセージを投稿できるSlackAppを作成する", DelelopersIO, https://dev.classmethod.jp/articles/post-messages-to-slack-channel/ (参照 2022-08-15)
