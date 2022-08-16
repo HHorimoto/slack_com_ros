@@ -50,3 +50,32 @@ $ ./receive_test.py -T {Your Token number} -C {Your Channel ID}
 ```
 
 see `Terminal` if the script prints latest `text`.
+
+## How To Use
+
+When you launch following launch script, you must set `Token Number` and `Channel ID`.
+The robot moves accordingly, when a message is sent among `forward`, `back`, `left` and `right`, the robot moves accordingly.
+
+```shell
+$ roslaunch slack_com_ros slack_com_ros.launch token:={Your Token number} channel:={Your Channel ID}
+```
+
+### Parameters
+
++ ***signal_text*** : Text to signal the start.
+    default : `START`
+
++ ***wait_time*** : Time for waitting signal.
+    default : `1.0`
+
++ ***send_url*** : Slack api send url. I believe that you dont need to change it.
+    default : `https://slack.com/api/chat.postMessage`
+
++ ***receive_url*** : Slack api receive url. I believe that you dont need to change it.
+    default : `https://slack.com/api/conversations.history`
+
++ ***token*** : Token number that you got before.
+    default : None
+
++ ***channel*** : Channel id that you got before.
+    default : None
