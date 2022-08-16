@@ -2,6 +2,8 @@
 
 **This package provides communication between Slack and ROS**
 
+<img src=./media/desc.png width=35% alt="description">
+
 ## Requirement
 + Ubuntu 18.04
 + ROS (Melodic)
