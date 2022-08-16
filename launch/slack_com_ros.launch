@@ -1,0 +1,21 @@
+<launch>
+    <arg name="signal_text" default="START"/>
+    <arg name="wait_time" default="1.0"/>
+    <arg name="send_url" default="https://slack.com/api/chat.postMessage"/>
+    <arg name="receive_url" default="https://slack.com/api/conversations.history"/>
+    <arg name="token" default=""/> <!-- Set Yours -->
+    <arg name="channel" default=""/> <!-- Set Yours -->
+    <node pkg="slack_com_ros" name="send_signal" type="send_signal.py" output="screen">
+        <param name="signal_text" value="$(arg signal_text)"/>
+        <param name="token" value="$(arg token)"/>
+        <param name="channel" value="$(arg channel)"/>
+        <param name="send_url" value="$(arg send_url)"/>
+    </node>
+    <node pkg="slack_com_ros" name="slack_listener" type="slack_listener.py" output="screen">
+        <param name="signal_text" value="$(arg signal_text)"/>
+        <param name="token" value="$(arg token)"/>
+        <param name="channel" value="$(arg channel)"/>
+        <param name="receive_url" value="$(arg receive_url)"/>
+        <param name="wait_time" value="$(arg wait_time)"/>
+    </node>
+</launch>
