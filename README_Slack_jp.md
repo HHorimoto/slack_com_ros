@@ -19,7 +19,7 @@
 
 以下のリンクと手順から，新しいアプリケーションを作成してください．
 
-- LINK : https://note.com/npaka/n/n4bcb38a1ea74
+- LINK : https://api.slack.com/apps
 
 - 手順；`Create an (New) App`を選択 → `App Name`(アプリ名)と`Pick a workspace to develop your app in`(ワークスペース名)欄を入力 → `Create App`を選択
 
